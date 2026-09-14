@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MY HOME</title>
+</head>
+<body> <!-- 화면의 99%가 이 body태그에서 작성이 된다 -->
+
+    <!-- 텍스트 관련 태그 -->
+    <h1>Hello, World!</h1>˜
+    <h2>Hello, World!</h2>
+    <h3>Hello, World!</h3>
+    <h4>Hello, World!</h4>
+    <h5>Hello, World!</h5>
+    <h6>Hello, World!</h6>
+
+    <!-- p 태그 문단 -->
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+
+    <p>h &nbsp;&nbsp;ello</p> 
+    <!-- html에서는 스페이스바로 띄어쓰기를 여러번 해도 출력엔 한 칸 밖에 안 띄어진다. 그래서 &nbsp;를 사용한다. -->
+
+    <!-- 가로 구분선 -->
+    <hr>
+
+    <!-- img 이미지 태그 -->
+    <!-- 
+    ./ : 현재 디렉토리
+    ../ : 상위 디렉토리
+    / : 루트 디렉토리
+    ./img/dog.jpeg : 현재 디렉토리 안에 있는 img 폴더 안에 있는 dog.jpeg 파일
+          -->
+    <!-- alt : 이미지가 로드되지 않았을 때 표시될 텍스트 -->
+    <!-- title : 이미지에 마우스를 올렸을 때 표시될 텍스트 -->
+    <img src="./img/dog.jpeg" alt="이 사진은 보더콜리입니다." title="보더콜리">
+
+    <!-- 양식 태그 -->
+    <!-- 
+    <form> : 양식을 생성하는 태그
+    <input> : 입력 필드를 생성하는 태그
+    type="text" : 텍스트 입력 필드
+    placeholder="아이디를 입력하세요."> : 텍스트 입력란에 아무것도 없을때 표시되는 안내문구
+     -->
+    <form
+        action="http://www.naver.com/member/">
+        method="post"
+        <!-- post는 보안에 강하다. 큰 데이터를 전송할 때 사용 -->
+        <!-- get은 보안에 취약하다. 작은 데이터를 전송할 때 사용 -->
+        ID: <input type="text" placeholder="아이디를 입력하세요."><br>
+        PW: <input type="password" placeholder="비밀번호를 입력하세요."><br>
+        Email: <input type="email" placeholder="이메일을 입력하세요."><br>
+        <!-- @가 있어야 유효한 이메일 주소로 판단하기 때문에 없으면 유효하지 않은 주소로 판단 -->
+        <select>
+            <option value="0">국가를 선택하세요.</option>
+            <option value="1">한국</option>
+            <option value="2">마국</option>
+            <option value="3">영국</option>
+        </select>
+        <br>
+        <!-- 맥기준 option + command + 방향키 = 같은 줄을 한번에 입력할 수 있음 -->
+        HOBBY: 
+        <input type="checkbox" name="hobby">축구
+        <input type="checkbox" name="hobby">농구
+        <input type="checkbox" name="hobby">야구
+        <input type="checkbox" name="hobby">배구
+        <input type="checkbox" name="hobby">골프
+        <input type="checkbox" name="hobby">테니스
+        <br>
+        GENDER:
+        <input type="radio" name="gender">남자
+        <input type="radio" name="gender">여자 
+        <br>
+        <input type="submit" value="SIGN UP"> 
+        <!-- submit 입력한 데이터가 서버로 전송됨. 서버의 주소는 form 태그의 action 속성에서 지정 -->
+        <input type="reset" value="RESET">
+
+
+    </form>
+
+
+</body>
+</html>

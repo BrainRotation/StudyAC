@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX04</title>
+</head>
+<body>
+    <!-- 
+    form(양식) 태그
+    
+    -->
+    <form action = "서버url" method = "get/post"> 
+        <!-- 중요한 속성 2가지 action, method
+         action : 데이터를 전송할 주소를 지정
+         method : 데이터를 전송할 방식 지정 (get, post) 
+         get : 주소창에 데이터가 노출됨, 전송할 수 있는 데이터의 양이 제한적, 보안에 취약
+         post : 주소창에 데이터가 노출되지 않음, 전송할 수 있는 데이터의 양이 제한적이지 않음, 보안에 강함
+            form 태그 안에 있는 input 태그의 name 속성에 지정된 값이 서버로 전송됨
+        action = "서버url" method = "get/post"
+        -->
+        <input type="text" placeholder="회원 ID 입력하세요"><br>
+        <input type="password" placeholder="회원 PW 입력하세요"><br>
+        <input type="email" placeholder="회원 mail을 입력하세요"><br>
+        <input type="number" placeholder="회원 나이를 입력하세요"><br>
+        <input type="file"><br> 
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <select>
+            <option>한국</option>
+            <option>미국</option>
+            <option>영국</option>
+            <option>일본</option>
+            <option>중국</option>
+        </select><br>
+        <input type="checkbox">축구
+        <input type="checkbox">농구
+        <input type="checkbox">배구
+        <input type="checkbox">수구
+        <input type="checkbox">탁구<br>
+        <input type="radio" name="gender">남자
+        <input type="radio" name="gender">여자<br>
+        <input type="color"><br>
+        <input type="range" max="10" min="0" step="2" value="5"><br>
+        <input type="submit" value="제출"><br>
+        <input type="reset" value="초기화"><br>
+    </form>
+</body>
+</html>

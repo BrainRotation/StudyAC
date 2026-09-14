@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INDEX 02</title>
+    <style>
+        table {
+            border-collapse: collapse; /* 테이블의 선을 겹치게 함 */
+            width: 500px; /* 테이블의 너비를 500px로 지정 */
+        }
+        td {
+            border: 1px solid #ccc; /* 테이블의 선을 회색으로 지정 */
+            padding: 5px; /* 셀 내부의 여백을 설정 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 표( == 엑셀에서 표)를 만드는 태그 -->
+    <!-- 선을 넣고 싶으면 border="1" 근데 디자인이 깔끔하지 않음 CSS로 대부분 대체함 -->
+    <table>
+        <!-- 
+        <thead> 표의 제목을 만드는 태그, 유치해서 거의 사용되지 않음
+            <tr> tr은 행을 만드는 태그
+                <th>열제목1</th> h는 열을 만드는 태그
+                <th>열제목2</th>
+                <th>열제목3</th>
+            </tr>
+        </thead>  
+        -->
+
+        <tbody> <!-- 표의 내용을 만드는 태그 -->
+        <tr> <!-- tr을 먼저 만들고 td를 입력 -->
+            <td>AAA</td> <!-- 1행 1열이 만들어짐 -->
+            <td>BBB</td> <!-- 1행 2열이 만들어짐 -->
+            <td>CCC</td> <!-- 1행 3열이 만들어짐 -->
+        </tr> <!-- 1행이 만들어짐 -->
+
+        <tr>
+            <td>DDD</td> <!-- 2행 1열이 만들어짐 -->
+            <td>EEE</td> <!-- 2행 2열이 만들어짐 -->
+            <td>FFF</td> <!-- 2행 3열이 만들어짐 -->
+        </tr> <!-- 2행이 만들어짐 -->
+        
+        <tr>
+            <td>GGG</td> <!-- 3행 1열이 만들어짐 -->
+            <td>HHH</td> <!-- 3행 2열이 만들어짐 -->
+            <td>III</td> <!-- 3행 3열이 만들어짐 -->
+        </tr> <!-- 3행이 만들어짐 -->
+
+        <tr>
+            <td>AAA</td> <!-- 4행 1열이 만들어짐 -->
+            <td>BBB</td> <!-- 4행 2열이 만들어짐 -->
+            <td>
+                <img src="./img/dog.jpeg" alt="이 사진은 보더콜리입니다." title="보더콜리" width="100px">
+            </td> <!-- 4행 3열이 만들어짐 -->
+        </tr> <!-- 4행이 만들어짐 -->
+    </tbody>
+</table>
+
+</body>
+</html>
